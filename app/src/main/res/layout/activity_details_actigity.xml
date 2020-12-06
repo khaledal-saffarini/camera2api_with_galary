@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".testActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/back"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="28dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp">
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/ee"
+            android:elevation="11dp"
+            />
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/ll"
+            android:elevation="11dp"
+            android:text="back" />
+
+        <ImageSwitcher
+            android:id="@+id/imgSw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.851">
+
+        </ImageSwitcher>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/cardView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="385dp"
+        app:cardBackgroundColor="#D50000"
+        app:cardCornerRadius="75dp"
+        app:cardElevation="20dp">
+
+        <ImageButton
+            android:id="@+id/deleimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/clear" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="177dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#E91E63"
+        android:text="Retern" />
+
+</RelativeLayout>
